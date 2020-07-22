@@ -30,7 +30,7 @@ class Palindrome extends Component {
                 <h4>Palindrome</h4>
                 <input className="inputLine" onChange={(e) => this.handleChange(e.target.value)}/>
                 <button className="confirmationButton" onClick={() => {this.checker(this.state.userInput)}}>Check</button>
-                <span className="resultsBox">Palindrome: {JSON.stringify(this.state.palindrome)}</span>
+                <span className="resultsBox">Palindrome: {this.state.palindrome}</span>
             </div>
         )
     }
